@@ -184,6 +184,13 @@ footer {
 	height: 50%;
 }
 
+.imgpix{
+  display: block;
+  margin-left: auto;
+	width: 40%;
+	height: 40%;
+}
+
 .imgqualite{
   display: block;
   margin-left: auto;
@@ -233,6 +240,13 @@ footer {
   margin-right: auto;
 	width: 10%;
 	height: 10%;
+}
+
+.imglogo{
+  display: block;
+  margin-left: auto;
+	width: 30%;
+	height: 30%;
 }
 
 #imgpix{
