@@ -1,0 +1,266 @@
+/* Style de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.formations {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.project {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.stages {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.qualites {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+}
+/* Style pour le bouton CV */
+.btn-cv {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-cv:hover {
+  background-color: #555;
+}
+
+/* Style du conteneur de carrousel */
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Style pour le conteneur des images */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Images du carrousel */
+.carousel-slide img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Style des boutons */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imglycee{
+<<<<<<< HEAD
+  display: block;
+  margin-left: auto;
+
+	width: 50%;
+	height: 50%;
+}
+
+.imgqualite{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 10%;
+	height: 10%;
+}
+
+.imgprojet{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+=======
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> 9cf98ffc1e7c737cf669308030f0e3c7cbaa443c
+	width: 50%;
+	height: 50%;
+}
+
+<<<<<<< HEAD
+.imgprojet1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 90%;
+	height: 90%;
+}
+
+.imgprojet2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 90%;
+	height: 90%;
+}
+
+.imgprojet3{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 90%;
+	height: 90%;
+=======
+.imgqualite{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 10%;
+	height: 10%;
+>>>>>>> 9cf98ffc1e7c737cf669308030f0e3c7cbaa443c
+}
+
+#imgpix{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 30%;
+	height:30%;
+}
+
+#img1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 1px;
+	height:1px;
+}
+
+#img2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 1%;
+	height: 1%;
+}
+
+
