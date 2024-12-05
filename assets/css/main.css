@@ -177,6 +177,7 @@ footer {
 }
 
 .imglycee{
+<<<<<<< HEAD
   display: block;
   margin-left: auto;
 
@@ -196,10 +197,16 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+=======
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> 9cf98ffc1e7c737cf669308030f0e3c7cbaa443c
 	width: 50%;
 	height: 50%;
 }
 
+<<<<<<< HEAD
 .imgprojet1{
   display: block;
   margin-left: auto;
@@ -222,6 +229,14 @@ footer {
   margin-right: auto;
 	width: 90%;
 	height: 90%;
+=======
+.imgqualite{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 10%;
+	height: 10%;
+>>>>>>> 9cf98ffc1e7c737cf669308030f0e3c7cbaa443c
 }
 
 #imgpix{
