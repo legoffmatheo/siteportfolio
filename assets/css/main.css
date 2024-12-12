@@ -1,276 +1,215 @@
-/* Style de base */
-* {
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
+/* Conteneur principal */
 .container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-main {
-  flex: 1;
+/* Barre de navigation fixe */
+header {
+  background: #4CAF50;
+  color: #fff;
+  padding: 0rem 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 body {
+  padding-top: 60px; /* Espace pour la barre de navigation */
+}
+
+/* Section À propos */
+.about {
+  background-color: #f4f4f4;
+  padding: 3rem 0;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+/* Grilles pour les cartes */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
 }
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section {
-  padding: 20px;
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-h2 {
-  margin-bottom: 10px;
+.card h3 {
+  margin: 0.5rem 0;
   color: #333;
 }
 
-.formations {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.project {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.stages {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.qualites {
-  background-color: #f4f4f4;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
-}
-
+/* Footer */
 footer {
+  background: #333;
+  color: #fff;
   text-align: center;
-  padding: 10px 0;
-  background-color: #333;
-  color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
-/* Style pour le bouton CV */
-.btn-cv {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 15px;
-  background-color: #333;
-  color: #fff;
+
+footer a {
+  color: #4CAF50;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
 }
 
-.btn-cv:hover {
-  background-color: #555;
+footer .socials {
+  margin-top: 10px;
 }
 
-/* Style du conteneur de carrousel */
-.carousel-container {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  overflow: hidden;
+footer .socials a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+/* Section Qualités */
+.qualities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-/* Style pour le conteneur des images */
-.carousel-slide {
+.qualities-grid .card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.qualities-grid .card img {
+  width: 60px;  /* Taille réduite de l'image */
+  height: 60px; /* Taille réduite de l'image */
+  margin-bottom: 1rem;
+}
+
+.qualities-grid .card:hover {
+  transform: scale(1.05);
+  background-color: #e8f5e9;
+}
+/* Boutons de téléchargement */
+.about-btns {
   display: flex;
-  transition: transform 0.5s ease;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-/* Images du carrousel */
-.carousel-slide img {
-  width: 100%;
-  border-radius: 10px;
+.about-btns .btn {
+  display: inline-block;
+  background-color: #4CAF50; /* Couleur verte */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: fit-content;
 }
 
-/* Style des boutons */
-.prev-btn, .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
+.about-btns .btn-primary:hover {
+  background-color: #45a049; /* Teinte plus foncée pour l'effet hover */
+  transform: translateY(-2px);
 }
 
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-.prev-btn:hover, .next-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.imglycee{
+.about-btns .btn span {
   display: block;
-  margin-left: auto;
-
-	width: 50%;
-	height: 50%;
 }
 
-.imgpix{
-  display: block;
-  margin-left: auto;
-	width: 40%;
-	height: 40%;
+/* Ajout d'un effet de survol pour les liens de téléchargement */
+.about-btns .btn:hover {
+  background-color: #45a049; /* Change légèrement la couleur au survol */
+  transform: translateY(-2px); /* Effet de décalage au survol */
 }
 
-.imgqualite{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 10%;
-	height: 10%;
+footer .socials a img {
+  width: 10%;   /* Augmente encore la taille de l'icône LinkedIn */
+  height: 10%;  /* Assurez-vous que l'icône reste carrée */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.imgprojet{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 50%;
-	height: 50%;
-}
 
-.imgprojet1{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 90%;
-	height: 90%;
+footer .socials a img:hover {
+  transform: scale(1.1);   /* Augmente davantage l'icône lors du survol */
+  opacity: 0.8;             /* Légère transparence pour un effet subtil */
 }
-
-.imgprojet2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 90%;
-	height: 90%;
-}
-
-.imgprojet3{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 90%;
-	height: 90%;
-}
-
-.imgqualite{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 10%;
-	height: 10%;
-}
-
-.imglogo{
-  display: block;
-  margin-left: auto;
-	width: 30%;
-	height: 30%;
-}
-
-#imgpix{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 30%;
-	height:30%;
-}
-
-#img1{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 1px;
-	height:1px;
-}
-
-#img2{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-	width: 1%;
-	height: 1%;
-}
-
 

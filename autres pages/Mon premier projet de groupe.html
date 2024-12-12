@@ -1,39 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <style>
+        /* Styles de base */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Conteneur principal */
+        .container {
+            width: 100%;
+            padding-top: 100px; /* Augmenter l'espace pour la barre de navigation */
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 100px;
+        }
+
+        /* Barre de navigation fixe */
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Barre de progression latérale à droite */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            right: 5%; /* Positionner à droite */
+            width: 12px;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1); /* Couleur de fond subtile */
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
+
+        .progress {
+            background-color: #4CAF50;
+            width: 100%;
+            height: 0%;
+            transition: height 0.25s ease-in-out;
+            border-radius: 6px;
+        }
+
+        /* Étapes sur la barre de progression */
+        .progress-step {
+            position: absolute;
+            right: 50%; /* Centrer les points */
+            transform: translateX(50%); /* Centrer les points */
+            width: 16px;
+            height: 16px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            transition: top 0.25s ease;
+        }
+
+        .progress-step:hover {
+            background-color: #388e3c;
+        }
+
+        /* Section Projet */
+        #projects {
+            margin-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        .project {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project h2 {
+            font-size: 2.8rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            color: #777;
+            margin-bottom: 2rem;
+        }
+
+        /* Galerie d'images */
+        .project-gallery {
+            display: flex;
+            justify-content: center; /* Centrer les images */
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .project-item {
+            width: 48%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-item p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-align: center;
+            color: #555;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Conteneur pour le texte de chaque étape */
+        .progress-text {
+            position: absolute;
+            right: 130%; /* Décalé à gauche de la barre */
+            font-size: 1.1rem;
+            color: #333;
+            text-align: right;
+            transition: top 0.25s ease;
+        }
+
+        /* Positionnement des textes sur la barre de progression */
+        .progress-text-1 { top: 14%; }
+        .progress-text-2 { top: 29%; }
+        .progress-text-3 { top: 43%; }
+        .progress-text-4 { top: 57%; }
+        .progress-text-5 { top: 71%; }
+        .progress-text-6 { top: 86%; }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Mon Portfolio</h1>
-
     </header>
-    <section id="projects">
+
+    <!-- Barre de progression avec les étapes -->
+    <div class="progress-bar">
+        <div class="progress"></div>
+        <div class="progress-step" style="top: 14%;"></div>
+        <div class="progress-step" style="top: 29%;"></div>
+        <div class="progress-step" style="top: 43%;"></div>
+        <div class="progress-step" style="top: 57%;"></div>
+        <div class="progress-step" style="top: 71%;"></div>
+        <div class="progress-step" style="top: 86%;"></div>
+    </div>
+
+    <section id="projects" class="container">
         <h2>Mon premier projet de groupe</h2>
         <div class="project">
-            <h3>Réalisées en : HTML,CSS,PHP,SQL</h3>
-            <img class="imgprojet1" src="../assets/images/projet 1/page de début.png" alt="projet début">
-            <p>Page d'acceuil</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/1.png" alt="projet début">
-            <p>Page de connection</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/2.png" alt="projet début">
-            <p>Page d'acceuil après la connection</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/3.png" alt="projet début">
-            <p>Page de création des description de métier</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/4.png" alt="projet début">
-            <p>Page de liste de soumissions acceptées</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/5.png" alt="projet début">
-            <p>Page de liste de soumissions refusées</p>
-            <img class="imgprojet1" src="../assets/images/projet 1/6.png" alt="projet début">
-            <p>Page de liste de soumissions en attente</p>
+            <h3>Réalisé avec : HTML, CSS, PHP, SQL</h3>
+
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/page de début.png" alt="Page d'accueil">
+                    <p>Page d'accueil</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/1.png" alt="Page de connexion">
+                    <p>Page de connexion</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/2.png" alt="Page après connexion">
+                    <p>Page après connexion</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/3.png" alt="Création de description">
+                    <p>Création de description</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/4.png" alt="Soumissions acceptées">
+                    <p>Soumissions acceptées</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/5.png" alt="Soumissions refusées">
+                    <p>Soumissions refusées</p>
+                </div>
+                <div class="project-item">
+                    <img class="imgprojet" src="../assets/images/projet 1/6.png" alt="Soumissions en attente">
+                    <p>Soumissions en attente</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        // Suivi du défilement de la page pour mettre à jour la barre de progression
+        window.onscroll = function () {
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let docHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+            let windowHeight = window.innerHeight;
+
+            let scrollPercent = (scrollTop / (docHeight - windowHeight)) * 100;
+
+            document.querySelector('.progress').style.height = scrollPercent + '%';
+
+            // Mettre à jour les étapes en fonction du défilement
+            let steps = document.querySelectorAll('.progress-step');
+            let numSteps = steps.length;
+            let stepHeight = (docHeight - windowHeight) / numSteps;
+
+            steps.forEach((step, index) => {
+                if (scrollTop >= stepHeight * index) {
+                    step.style.backgroundColor = '#4CAF50';
+                } else {
+                    step.style.backgroundColor = '#e0e0e0';
+                }
+            });
+
+            // Déplacer les noms en fonction du défilement
+            let progressTexts = document.querySelectorAll('.progress-text');
+            progressTexts.forEach((text, index) => {
+                let stepOffset = (scrollPercent * (docHeight - windowHeight)) / 100;
+                let topPosition = (stepOffset / docHeight) * 100;
+                text.style.top = `${topPosition}%`;
+            });
+        };
+    </script>
 </body>
+
 </html>

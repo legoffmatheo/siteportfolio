@@ -3,120 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Mathéo</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <!-- Barre de navigation fixe -->
     <header>
-        <h1>Mon Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#formations">Formations - Diplômes</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#qualites">Qualités</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Mathéo Le Goff</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#stages">Stages</a></li>
+                    <li><a href="#qualites">Qualités</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je m’appelle Mathéo, je suis actuellement étudiant au Lycée Félix Dantec à Lannion, en deuxième année de BTS en Services informatiques aux organisations option B SLAM (Solutions logicielles et applications métiers).</p>
-        <a href="assets/images/CV.pdf" target="_blank" class="btn-cv" download="Mon_CV.pdf">Télécharger mon CV</a>
-        <a href="assets/images/Tableau de synthese - Epreuve E5 - BTS SIO 2025.pdf" target="_blank" class="btn-cv" download="Mon_tableau_de_synthese_epreuve_E5.pdf">Télécharger mon tableau de synthèse épreuve E5</a>
-    </section>
+    <main>
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>À propos de moi</h2>
+                        <p>Je m’appelle Mathéo, étudiant au Lycée Félix Dantec à Lannion en deuxième année de BTS SIO, option SLAM. Passionné par le développement web et les technologies numériques, j’aspire à perfectionner mes compétences et à contribuer à des projets innovants.</p>
+                    </div>
+                    <div class="about-btns">
+                        <!-- Lien pour le CV -->
+                        <a href="assets/images/CV.pdf" target="_blank" class="btn btn-primary">
+                            <span>Voir mon CV</span>
+                        </a>
+                        <!-- Lien pour le tableau de synthèse -->
+                        <a href="assets/images/Tableau de synthese - Epreuve E5 - BTS SIO 2025.pdf" target="_blank" class="btn btn-primary">
+                            <span>Voir mon tableau de synthèse</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
-    <section id="formations">
-        <h2>Formations - Diplômes</h2>
-        <div class="formations">
-            <h3>Bac Pro SN RISC (2020-2023)</h3>
-            <img class="imglycee" src="assets/images/lycée.webp" alt="projet début">
-            <p>J'ai obtenu mon Baccalauréat Professionnel,</p>
-            <p>Système Numérique, option RISC( Réseaux Informatiques et Systèmes Communicants) </p>
+        <section id="formations" class="section">
+            <div class="container">
+                <h2>Formations</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Bac Pro SN RISC (2020-2023)</h3>
+                        <img src="assets/images/lycée.webp" alt="Lycée">
+                        <p>Baccalauréat Professionnel Système Numérique, option RISC.</p>
+                    </div>
+                    <div class="card">
+                        <h3>BTS SIO (2023-2025)</h3>
+                        <img src="assets/images/lycée.webp" alt="BTS">
+                        <p>Actuellement en cours : BTS SIO, option B SLAM.</p>
+                    </div>
+                    <div class="card">
+                        <h3>PIX Certification</h3>
+                        <a href="assets/images/attestation-pix.pdf">
+                            <img src="assets/images/pix.png" alt="PIX">
+                        </a>
+                        <p>Certifié PIX. Code : P-8P8CCBHW.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </div>
-        <div class="formations">
-            <h3>BTS SIO (2023-2025)</h3>
-            <img class="imglycee" src="assets/images/lycée.webp" alt="projet début">
-            <p>Actuellement en cour de formation en BTS SIO,</p>
-            <p>option B SLAM (Solutions logicielles et applications métiers). </p>
-        </div>
-        <div class="formations">
-            <h3>PIX</h3>
-            <a href="assets/images/attestation-pix.pdf"><img class="imgpix" src="assets/images/pix.png" alt="projet début"></a>
-            <p>Je suis certifier PIX,</p>
-            <p>Code PIX : P-8P8CCBHW</p>
-        </div>
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projets</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Premier projet de groupe</h3>
+                        <a href="autres pages/Mon premier projet de groupe.html">
+                            <img src="assets/images/projet 1/page de début.png" alt="Projet 1">
+                        </a>
+                        <p>Période : Premier semestre de première année</p>
+                        <p>Techno : HTML, CSS, PHP, SQL</p>
+                    </div>
+                    <div class="card">
+                        <h3>Gestionnaire d'animations</h3>
+                        <a href="autres pages/Projet gestionnaire annimation.html">
+                            <img src="assets/images/projet 2/page de début.png" alt="Projet 2">
+                        </a>
+                        <p>Période : Deuxième semestre de première année</p>
+                        <p>Techno : HTML, CSS, PHP, SQL, JS</p>
+                    </div>
+                    <div class="card">
+                        <h3>Système de vente en ligne</h3>
+                        <a href="autres pages/Projet de groupe d'un système de vente en ligne.html">
+                            <img src="assets/images/projet 3/page de début.png" alt="Projet 3">
+                        </a>
+                        <p>Période : Premier semestre de seconde année</p>
+                        <p>Techno : HTML, CSS, PHP, SQL, JS, Symfony, Vue.js</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Mes projets réalisés en classe</h2>
-        <div class="project">
-            <h3>Mon premier projet de groupe</h3>
-            <a href="autres pages/Mon premier projet de groupe.html"><img class="imgprojet" src="assets/images/projet 1/page de début.png" alt="projet début"></a>
-            <p>Période : Premier semestre de première année</p>
-            <p>Réalisées en : HTML,CSS,PHP,SQL</p>
-            <p>Avec : Visual Studio Code, Wamp</p>
-        </div>
-        <div class="project">
-            <h3>Projet de gestionnaire des annimation</h3>
-            <a href="autres pages/Projet gestionnaire annimation.html"><img class="imgprojet" src="assets/images/projet 2/page de début.png" alt="projet début"></a>
-            <p>Période : Deuxième semestre de première année</p>
-            <p>Réalisées en : HTML,CSS,PHP,SQL,JS</p>
-            <p>Avec : Visual Studio Code, Wamp</p>
-        </div>
-        <div class="project">
-            <h3>Projet de groupe d'un système de vente en ligne</h3>
-            <a href="autres pages/Projet de groupe d'un système de vente en ligne.html"><img class="imgprojet" src="assets/images/projet 3/page de début.png" alt="projet début"></a>
-            <p>Période : Premier semestre de seconde année</p>
-            <p>Réalisées en : HTML,CSS,PHP,SQL,JS</p>
-            <p>Avec : Visual Studio Code, Wamp,Synfony,Vue.js</p>
-        </div>
-    </section>
+        <section id="stages" class="section">
+            <div class="container">
+                <h2>Stages</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Valeur Habitat</h3>
+                        <img src="assets/images/Valeur Habitat.jpg" alt="Valeur Habitat">
+                        <p>Période : 27/05/2024 - 29/06/2024</p>
+                        <p>WordPress, HTML, CSS.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Dantec Market</h3>
+                        <p>Période : 06/01/2025 - 22/02/2025</p>
+                        <p>HTML, CSS, PHP, SQL, JS, Symfony, Vue.js</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="stages">
-        <h2>Mes stages</h2>
-        <div class="stages">
-            <h3>Valeur Habitât</h3>
-            <img class="imglogo" src="assets/images/Valeur Habitat.jpg" alt="Curieux">
-            <p>Période : du 27/05/2024 au 29/06/2024</p>
-            <p>Réalisées en : HTML,CSS,WordPress</p>
-            <p>Avec : WordPress</p>
-        </div>
-        <div class="stages">
-            <h3>Dantec Marcket</h3>
-            <p>Période : du 06/01/2025 au 22/02/2025</p>
-            <p>Réalisées en : HTML,CSS,PHP,SQL,JS</p>
-            <p>Avec : Visual Studio Code, Wamp,Synfony,Vue.js</p>
-        </div>
-    </section>
+        <section id="qualites" class="section">
+            <div class="container">
+                <h2>Qualités</h2>
+                <div class="qualities-grid">
+                    <div class="card">
+                        <img src="assets/images/Curieux.png" alt="Curieux">
+                        <h3>Curieux</h3>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Adaptabilité.png" alt="Adaptabilité">
+                        <h3>Adaptabilité</h3>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/Persévérant.png" alt="Persévérant">
+                        <h3>Persévérant</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
 
-    
-    <section id="qualites">
-        <h2>Mes qualités</h2>
-        <div class="qualites">
-            <h3>Curieux</h3>
-            <img class="imgqualite" src="assets/images/Curieux.png" alt="Curieux">
-            <p>Curieux</p>
-        </div>
-        <div class="qualites">
-            <h3>Adaptabilité</h3>
-            <img class="imgqualite" src="assets/images/Adaptabilité.png" alt="Adaptabilité">
-            <p>Adaptabilité</p>
-        </div>
-        <div class="qualites">
-            <h3>Persévérant</h3>
-            <img class="imgqualite" src="assets/images/Persévérant.png" alt="Persévérant">
-            <p>Persévérant</p>
-        </div>
-    </section>
-    <a>email : legoff.matheo4@gmail.com</a>
-    <div style="display: flex;">
-    <a id="img1" href="https://www.linkedin.com/in/matheo-le-goff-b55a09265/"><img src="assets/images/gmail.png" alt="legoff.matheo4@gmail.com"></a>
-    <a id="img2" href="https://www.linkedin.com/in/matheo-le-goff-b55a09265/"><img src="assets/images/linkedin.png" alt="linkedin"></a>
-    </div>
     <footer>
-        <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        <div class="container">
+            <p>Contact : <a href="mailto:legoff.matheo4@gmail.com">legoff.matheo4@gmail.com</a></p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/matheo-le-goff-b55a09265/" class="linkedin-icon">
+                    <img src="assets/images/linkedin.png" alt="Profil LinkedIn de Mathéo Le Goff">
+                </a>
+            </div>
+            <p>&copy; 2024 Mathéo Le Goff. Tous droits réservés.</p>
+        </div>
     </footer>
+    
 </body>
 </html>
