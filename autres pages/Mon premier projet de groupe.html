@@ -107,31 +107,47 @@
             margin-bottom: 2rem;
         }
 
-        /* Galerie d'images */
-        .project-gallery {
-            display: flex;
-            justify-content: center; /* Centrer les images */
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 30px;
-        }
+ /* Galerie d'images */
+.project-gallery {
+    display: flex;
+    flex-direction: column; /* Empile les images verticalement */
+    align-items: center; /* Centre les images horizontalement */
+    gap: 20px;
+    margin-top: 30px;
+    max-width: 1000px; /* Limite la largeur de la galerie */
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        .project-item {
-            width: 48%;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            text-align: center;
-        }
+/* Ajustement de la taille des éléments dans la galerie */
+.project-item {
+    width: 100%; /* Assure que chaque élément occupe toute la largeur disponible */
+    max-width: 1000px; /* Limite la largeur des images */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px; /* Espacement entre les images */
+}
 
-        .project-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
+/* Ajustement de la taille des images */
+.project-item img {
+    width: 100%; /* Remplir l'espace disponible horizontalement */
+    height: 100%; /* Hauteur ajustée pour une image plus grande */
+    object-fit: cover; /* Recadrer l'image pour garder son aspect sans la déformer */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Ajustements spécifiques pour la deuxième page (optionnel) */
+.imgprojet1 {
+    width: 100%;
+    height: 100%; /* Hauteur ajustée pour une image plus grande */
+    object-fit: cover;
+    border-radius: 8px;
+}
 
         .project-item p {
             font-size: 1.2rem;
