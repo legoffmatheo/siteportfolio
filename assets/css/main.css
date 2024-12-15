@@ -17,7 +17,7 @@ body {
 
 /* Barre de navigation fixe */
 header {
-  background: #4CAF50;
+  background: #34495e;
   color: #fff;
   padding: 0rem 0;
   text-align: center;
@@ -69,7 +69,7 @@ body {
 }
 
 .about-text h2 {
-  color: #4CAF50;
+  color: #34495e;
   margin-bottom: 1rem;
 }
 
@@ -126,7 +126,7 @@ footer {
 }
 
 footer a {
-  color: #4CAF50;
+  color: #34495e;
   text-decoration: none;
 }
 
@@ -175,7 +175,7 @@ footer .socials a img {
 
 .about-btns .btn {
   display: inline-block;
-  background-color: #4CAF50; /* Couleur verte */
+  background-color: #34495e; /* Couleur verte */
   color: #fff;
   padding: 12px 20px;
   border-radius: 8px;
@@ -197,7 +197,7 @@ footer .socials a img {
 
 /* Ajout d'un effet de survol pour les liens de téléchargement */
 .about-btns .btn:hover {
-  background-color: #45a049; /* Change légèrement la couleur au survol */
+  background-color: #bdc3c7; /* Change légèrement la couleur au survol */
   transform: translateY(-2px); /* Effet de décalage au survol */
 }
 
