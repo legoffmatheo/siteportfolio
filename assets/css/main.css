@@ -201,17 +201,34 @@ footer .socials a img {
   transform: translateY(-2px); /* Effet de décalage au survol */
 }
 
-footer .socials a img {
-  width: 10%;   /* Augmente encore la taille de l'icône LinkedIn */
-  height: 10%;  /* Assurez-vous que l'icône reste carrée */
+footer .socials a.linkedin-icon img {
+  width: 10%;
+  height: 10%;
+  border-radius: 8px; /* Effet arrondi pour LinkedIn */
+  padding: 5px; /* Espace autour de l'icône */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
-footer .socials a img:hover {
-  transform: scale(1.1);   /* Augmente davantage l'icône lors du survol */
-  opacity: 0.8;             /* Légère transparence pour un effet subtil */
+footer .socials a.linkedin-icon img:hover {
+  transform: scale(1.2); /* Agrandit légèrement l'image au survol */
+  opacity: 0.8;
 }
+
+footer .socials a.github-icon img {
+  width: 6%;
+  height: 6%;
+  border-radius: 8px; /* Cercle pour GitHub */
+  background-color: #333; /* Couleur de fond sombre */
+  padding: 5px; /* Espace autour de l'icône */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .socials a.github-icon img:hover {
+  transform: scale(1.2); /* Agrandit légèrement l'image au survol */
+  opacity: 0.8;
+}
+
+
 /* Section Compétences */
 #competences {
   padding: 50px 0;
@@ -264,5 +281,13 @@ footer .socials a img:hover {
   width: 80%;
   height: 65%;
 }
+
+.GitHub {
+  width: 50%; /* Définit une largeur spécifique */
+  height: 50%; /* Maintient le rapport d'aspect */
+  display: block; /* Assure une bonne intégration dans le flux */
+  margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
 
 
