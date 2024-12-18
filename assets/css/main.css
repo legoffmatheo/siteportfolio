@@ -201,6 +201,7 @@ footer .socials a img {
   transform: translateY(-2px); /* Effet de décalage au survol */
 }
 
+
 footer .socials a.linkedin-icon img {
   width: 10%;
   height: 10%;
@@ -221,12 +222,28 @@ footer .socials a.github-icon img {
   background-color: #333; /* Couleur de fond sombre */
   padding: 5px; /* Espace autour de l'icône */
   transition: transform 0.3s ease, opacity 0.3s ease;
+  margin-right: 6%;
+  margin-left: 4%;
 }
 
 footer .socials a.github-icon img:hover {
   transform: scale(1.2); /* Agrandit légèrement l'image au survol */
   opacity: 0.8;
 }
+
+footer .socials a.notion-icon img {
+  width: 6%;
+  height: 6%;
+  border-radius: 8px; /* Angle légèrement arrondi pour Notion */
+  padding: 5px; /* Espace autour de l'icône */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .socials a.notion-icon img:hover {
+  transform: scale(1.2); /* Agrandit légèrement l'image au survol */
+  opacity: 0.8;
+}
+
 
 
 /* Section Compétences */
