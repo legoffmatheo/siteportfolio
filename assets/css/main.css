@@ -203,10 +203,10 @@ footer .socials a img {
 
 
 footer .socials a.linkedin-icon img {
-  width: 10%;
-  height: 10%;
+  width: 7%;
+  height: 7%;
   border-radius: 8px; /* Effet arrondi pour LinkedIn */
-  padding: 5px; /* Espace autour de l'icône */
+  padding: 1px; /* Espace autour de l'icône */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -216,14 +216,13 @@ footer .socials a.linkedin-icon img:hover {
 }
 
 footer .socials a.github-icon img {
-  width: 6%;
-  height: 6%;
+  width: 4.2%;
+  height: 4.2%;
   border-radius: 8px; /* Cercle pour GitHub */
-  background-color: #333; /* Couleur de fond sombre */
-  padding: 5px; /* Espace autour de l'icône */
+  padding: 1px; /* Espace autour de l'icône */
   transition: transform 0.3s ease, opacity 0.3s ease;
-  margin-right: 5.6%;
-  margin-left: 4%;
+  margin-right: 1.3%;
+  margin-left: 0%;
 }
 
 footer .socials a.github-icon img:hover {
@@ -232,10 +231,10 @@ footer .socials a.github-icon img:hover {
 }
 
 footer .socials a.notion-icon img {
-  width: 6%;
-  height: 6%;
+  width: 4%;
+  height: 4%;
   border-radius: 8px; /* Angle légèrement arrondi pour Notion */
-  padding: 5px; /* Espace autour de l'icône */
+  padding: 1px; /* Espace autour de l'icône */
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
