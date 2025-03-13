@@ -379,5 +379,111 @@ footer .socials a.notion-icon img:hover {
   margin: 0 auto; /* Centre l'image dans son conteneur */
 }
 
+.timeline {
+  position: relative;
+  max-width: 1000px; /* Augmentation de la largeur pour plus d'espace */
+  margin: auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: #007bff; /* Ligne centrale BLEUE */
+  transform: translateX(-50%);
+}
+
+.event {
+  position: relative;
+  width: 45%; /* Réduire la largeur pour équilibrer l'espace */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.event:nth-child(odd) {
+  left: 0; /* Alignement symétrique */
+  padding-right: 50px;
+  text-align: left;
+}
+
+.event:nth-child(even) {
+  left: 55%; /* Décalage symétrique par rapport à la ligne centrale */
+  padding-left: 50px;
+  text-align: left;
+}
+
+
+.event:nth-child(odd) .event-content {
+  flex-direction: row-reverse; /* Inverser l'ordre : image à droite, texte à gauche */
+  justify-content: flex-start;
+}
+
+.event:nth-child(odd) img {
+  margin-left: 20px; /* Ajuster l'espacement de l'image */
+  margin-right: 0;
+}
+
+
+.event:nth-child(even) {
+  left: 50%;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.event-content {
+  display: flex;
+  align-items: center;
+  background: #ffffff; /* Fond blanc */
+  padding: 25px; /* Plus de padding pour agrandir les cartes */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Augmentation de la taille max des cartes */
+}
+
+.event img {
+  width: 100%;
+  max-width: 200px; /* Agrandissement des images */
+  border-radius: 10px;
+}
+
+.event:nth-child(odd) img {
+  margin-left: 20px;
+}
+
+.event:nth-child(even) img {
+  margin-right: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .event {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 20px 20px 20px 40px;
+  }
+
+  .event-content {
+    flex-direction: row;
+  }
+
+  .event img {
+    margin: 0 15px 0 0;
+  }
+}
+
+
 
 
