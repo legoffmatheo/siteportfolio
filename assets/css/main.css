@@ -139,6 +139,7 @@ footer .socials a img {
   height: 30px;
   margin: 0 10px;
 }
+
 /* Section Qualités */
 .qualities-grid {
   display: grid;
@@ -165,6 +166,7 @@ footer .socials a img {
   transform: scale(1.05);
   background-color: #e8f5e9;
 }
+
 /* Boutons de téléchargement */
 .about-btns {
   display: flex;
@@ -200,7 +202,6 @@ footer .socials a img {
   background-color: #bdc3c7; /* Change légèrement la couleur au survol */
   transform: translateY(-2px); /* Effet de décalage au survol */
 }
-
 
 footer .socials a.linkedin-icon img {
   width: 7%;
@@ -242,8 +243,6 @@ footer .socials a.notion-icon img:hover {
   transform: scale(1.2); /* Agrandit légèrement l'image au survol */
   opacity: 0.8;
 }
-
-
 
 /* Section Compétences */
 #competences {
@@ -318,7 +317,6 @@ footer .socials a.notion-icon img:hover {
   pointer-events: none; /* Empêche le texte d'interférer avec les clics */
 }
 
-
 /* Section Veille */
 #veille {
   padding: 50px 0;
@@ -366,7 +364,6 @@ footer .socials a.notion-icon img:hover {
   height: 65%;
 }
 
-
 #DantecMarket {
   width: 80%;
   height: 65%;
@@ -401,6 +398,7 @@ footer .socials a.notion-icon img:hover {
   width: 45%; /* Réduire la largeur pour équilibrer l'espace */
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 20px; /* Réduisez cette valeur pour diminuer l'espacement */
 }
 
 .event:nth-child(odd) {
@@ -415,7 +413,6 @@ footer .socials a.notion-icon img:hover {
   text-align: left;
 }
 
-
 .event:nth-child(odd) .event-content {
   flex-direction: row-reverse; /* Inverser l'ordre : image à droite, texte à gauche */
   justify-content: flex-start;
@@ -425,7 +422,6 @@ footer .socials a.notion-icon img:hover {
   margin-left: 20px; /* Ajuster l'espacement de l'image */
   margin-right: 0;
 }
-
 
 .event:nth-child(even) {
   left: 50%;
@@ -483,7 +479,6 @@ footer .socials a.notion-icon img:hover {
     margin: 0 15px 0 0;
   }
 }
-
-
-
-
+.event {
+  margin-bottom: -120px ;
+}

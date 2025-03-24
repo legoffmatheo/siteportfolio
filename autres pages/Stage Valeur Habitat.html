@@ -108,47 +108,47 @@
             margin-bottom: 2rem;
         }
 
- /* Galerie d'images */
-.project-gallery {
-    display: flex;
-    flex-direction: column; /* Empile les images verticalement */
-    align-items: center; /* Centre les images horizontalement */
-    gap: 20px;
-    margin-top: 30px;
-    max-width: 1000px; /* Limite la largeur de la galerie */
-    margin-left: auto;
-    margin-right: auto;
-}
+        /* Galerie d'images */
+        .project-gallery {
+            display: flex;
+            flex-direction: column; /* Empile les images verticalement */
+            align-items: center; /* Centre les images horizontalement */
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 1000px; /* Limite la largeur de la galerie */
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-/* Ajustement de la taille des éléments dans la galerie */
-.project-item {
-    width: 100%; /* Assure que chaque élément occupe toute la largeur disponible */
-    max-width: 1000px; /* Limite la largeur des images */
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    text-align: center;
-    margin-bottom: 20px; /* Espacement entre les images */
-}
+        /* Ajustement de la taille des éléments dans la galerie */
+        .project-item {
+            width: 100%; /* Assure que chaque élément occupe toute la largeur disponible */
+            max-width: 1000px; /* Limite la largeur des images */
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            margin-bottom: 20px; /* Espacement entre les images */
+        }
 
-/* Ajustement de la taille des images */
-.project-item img {
-    width: 100%; /* Remplir l'espace disponible horizontalement */
-    height: 100%; /* Hauteur ajustée pour une image plus grande */
-    object-fit: cover; /* Recadrer l'image pour garder son aspect sans la déformer */
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
+        /* Ajustement de la taille des images */
+        .project-item img {
+            width: 100%; /* Remplir l'espace disponible horizontalement */
+            height: 100%; /* Hauteur ajustée pour une image plus grande */
+            object-fit: cover; /* Recadrer l'image pour garder son aspect sans la déformer */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
 
-/* Ajustements spécifiques pour la deuxième page (optionnel) */
-.imgprojet1 {
-    width: 100%;
-    height: 100%; /* Hauteur ajustée pour une image plus grande */
-    object-fit: cover;
-    border-radius: 8px;
-}
+        /* Ajustements spécifiques pour la deuxième page (optionnel) */
+        .imgprojet1 {
+            width: 100%;
+            height: 100%; /* Hauteur ajustée pour une image plus grande */
+            object-fit: cover;
+            border-radius: 8px;
+        }
 
         .project-item p {
             font-size: 1.2rem;
@@ -183,6 +183,29 @@
         .progress-text-4 { top: 57%; }
         .progress-text-5 { top: 71%; }
         .progress-text-6 { top: 86%; }
+
+        /* Style pour la carte */
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.5;
+        }
     </style>
 </head>
 
@@ -203,9 +226,12 @@
     </div>
 
     <section id="projects" class="container">
-        <h2>Valeur Habitat</h2>
+        <div class="card">
+            <h2>Stage chez Valeur Habitat</h2>
+            <p>Stage fait à Valeur Habitat, une société de rénovation qui avait besoin d'un site web vitrine pour promouvoir leur activité. J'ai donc réalisé ce site avec WordPress, un CMS (système de gestion de contenu) qui permet de créer des sites web. J'ai dû faire une conformité avec le SEO (Search Engine Optimization), qui est l'ensemble des techniques visant à améliorer la visibilité d'un site web sur les moteurs de recherche, pour que le site soit mieux référencé.</p>
+        </div>
         <div class="project">
-            <h3>Réalisé avec : WordPress,HTML,CSS</h3>
+            <h3>Réalisé avec : WordPress, HTML, CSS</h3>
 
             <div class="project-gallery">
                 <a href="https://valeurhabitat.fr/" target="_blank" class="btn btn-primary">
